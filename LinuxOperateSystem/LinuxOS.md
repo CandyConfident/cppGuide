@@ -463,7 +463,7 @@ spin_unlock(&list_lock);
 
 ![1592644279073](../LinuxOperateSystem/picture/1592644279073.png)
 
-####实时进程的调度
+#### 实时进程的调度
 
 　　实时进程，只有静态优先级，因为内核不会再根据休眠等因素对其静态优先级做调整，其范围在0~MAX_RT_PRIO-1间。默认MAX_RT_PRIO配置为100，也即，默认的实时优先级范围是0~99。而nice值，影响的是优先级在MAX_RT_PRIO~MAX_RT_PRIO+40范围内的进程。
 
